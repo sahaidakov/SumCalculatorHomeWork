@@ -14,21 +14,16 @@ public class SumCalculator {
             int[] numbers = new int[n];
             for (int i = 0; i < numbers.length; i++) {
                 numbers[i] = n - i;
-            }
-            for (int number : numbers) {
-                summary = number + summary;
+                summary = numbers[i] + summary;
             }
             summary = summary * (-1);
         } else {
             int[] numbers = new int[n];
             for (int i = 0; i < numbers.length; i++) {
                 numbers[i] = n - i;
-            }
-            for (int number : numbers) {
-                summary = number + summary;
+                summary = numbers[i] + summary;
             }
         }
-
         return summary;
     }
 }
