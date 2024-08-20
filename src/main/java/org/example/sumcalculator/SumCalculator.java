@@ -2,11 +2,12 @@ package org.example.sumcalculator;
 
 public class SumCalculator {
     int sum(int n) {
+
         int summary = 0;
 
         if (n == 0) {
             System.out.println("can't input 0");
-            return 0;
+            throw new IllegalArgumentException();
         }
 
         if (n < 0) {
