@@ -5,8 +5,8 @@ public class SumCalculator {
 
         int summary = 0;
 
-        if (n == 0) {
-            System.out.println("can't input 0");
+        if (n == 0 || n >= 65536) {
+            System.out.println("Can't input 0 or number higher than 65535");
             throw new IllegalArgumentException();
         }
 
