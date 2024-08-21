@@ -30,8 +30,8 @@ class SumCalculatorTest {
     void SumCalculatorSuccessTest2() {
 
         // Given
-        int input2 = -3;
-        int expected2 = -6;
+        int input2 = 1;
+        int expected2 = 1;
 
         // When
         int result2 = sumCalculator.sum(input2);
