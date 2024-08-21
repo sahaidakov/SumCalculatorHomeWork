@@ -12,17 +12,14 @@ public class SumCalculator {
 
         if (n < 0) {
             n = n * (-1);
-            int[] numbers = new int[n];
-            for (int i = 0; i < numbers.length; i++) {
-                numbers[i] = n - i;
-                summary = numbers[i] + summary;
+
+            for (int i = 1; i <= n; i++) {
+                summary = i + summary;
             }
             summary = summary * (-1);
         } else {
-            int[] numbers = new int[n];
-            for (int i = 0; i < numbers.length; i++) {
-                numbers[i] = n - i;
-                summary = numbers[i] + summary;
+            for (int i = 1; i <= n; i++) {
+                summary = i + summary;
             }
         }
         return summary;
